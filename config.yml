@@ -167,13 +167,15 @@ params:
       category: Associated Services
     - name: Agents access to SignMaster
       category: Agents
-    - name: Agents app - android
+    - name: Agents mobile app - android
       category: Agents
-    - name: Agents app - iOS
+    - name: Agents mobile app - iOS
       category: Agents
+    - name: Operators mobile app
+      category: Operators
     - name: Operators access to SignMaster
       description: The web frontend for the application.
-      category: Uncategorized
+      category: Operators
       link: https://signmaster.agencyexpress.net/
     - name: API
       description: The guts of the application.
@@ -278,7 +280,7 @@ params:
   #
   # Default: `false`
   # BOOLEAN; `true`, `false`
-  disableDarkMode: false
+  disableDarkMode: true
 
   # Should we show the logo or the title
   # of the status page?
@@ -342,7 +344,7 @@ params:
   # disrupted: "#cc4400"
   # down: "#e60000"
   # notice: "#24478f"
-  brand: "#0a0c0f"
+  brand: "#5998C9"
   ok: "#008000"
   disrupted: "#cc4400"
   down: "#e60000"
