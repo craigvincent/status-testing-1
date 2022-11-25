@@ -143,17 +143,15 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: Core
-      description: The main servers are located here.
-      closed: false
-      untitled: true
     - name: Agents
       description: For agents
       closed: false
     - name: Operators
       description: For operators
-    - name: Associated Services
+    - name: Core
+      description: The main servers are located here.
       closed: true
+      untitled: false
 
   # These are your systems. Change them to
   # change the amount of components.
@@ -163,13 +161,13 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: E-Mail Hosting
-      category: Associated Services
     - name: Agents access to SignMaster
       category: Agents
     - name: Agents mobile app - android
       category: Agents
     - name: Agents mobile app - iOS
+      category: Agents
+    - name: Agents API
       category: Agents
     - name: Operators mobile app
       category: Operators
@@ -177,8 +175,12 @@ params:
       description: The web frontend for the application.
       category: Operators
       link: https://signmaster.agencyexpress.net/
-    - name: API
+    - name: E-Mail Hosting
+      category: Operators
+    - name: .NET API
       description: The guts of the application.
+      category: Core
+    - name: .NET 6 API
       category: Core
     - name: Route Optimiser
       description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
@@ -265,7 +267,7 @@ params:
   #
   # Default: `false`
   # BOOLEAN; `true`, `false`
-  disableIncidentHistory: false
+  disableIncidentHistory: true
 
   # Disable dark mode
   #
