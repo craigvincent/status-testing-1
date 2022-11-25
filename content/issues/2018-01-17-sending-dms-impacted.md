@@ -6,7 +6,7 @@ resolvedWhen: 2017-12-17 16:58:00
 # Possible severity levels: down, disrupted, notice
 severity: disrupted
 affected:
-  - API
+  - Core
 section: issue
 ---
 
